@@ -1,0 +1,116 @@
+﻿<%@ Master Language="VB" CodeFile="Master2-login.master.vb" Inherits="adm_Master2_login" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="Oficina de Intermediación Laboral, Ilustre Municipalidad de Valparaíso"/>
+
+     <title>OMIL Valparaíso</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+	<link rel="stylesheet" href="../css/main.css"/>
+    <link href="../css/custom.css" rel="stylesheet"/>
+	
+	<script src="//use.edgefonts.net/bebas-neue.js"></script>
+
+          <link href="../css/animate.css" rel="stylesheet"/>
+    <link href="../css/Pe-icon-7-stroke.css" rel="stylesheet"/>
+        <script src="../js/wow.min.js"></script>
+    <!-- Custom Fonts & Icons -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'/>
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,600,400italic,700' rel='stylesheet' type='text/css'/>
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'/>
+	<link rel="stylesheet" href="../css/icomoon-social.css"/>
+	<link rel="stylesheet" href="../css/font-awesome.min.css"/>
+	
+	<script src="../js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+      <!-- Javascripts -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="../js/bootstrap.min.js"></script>
+		
+		<!-- Scrolling Nav JavaScript -->
+		<script src="../js/jquery.easing.min.js"></script>
+		<script src="../js/scrolling-nav.js"></script>		  
+    
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+   <header class="navbar navbar-inverse navbar-fixed-top" role="banner">
+        <div class="container">
+            <div class="navbar-header">
+               
+                <a class="navbar-brand" href="index.html"><img src="../img/omil2.fw.png" alt="Omil Valparaíso"/></a>
+            </div>
+         
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                                     <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bienvenido <asp:Label runat="server" ID="label1"></asp:Label></a><i class="icon-angle-down"></i>
+                       
+
+                    </li>
+                  
+                    <li class="dropdown">
+                       
+                        <asp:LinkButton runat="server" ID="lbsalir"  CausesValidation="false" OnClick="lbLogout_Click" OnClientClick="return confirm('Está seguro que quiere Salir?');">Salir</asp:LinkButton>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </header><!--/header-->
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+ <!-- Footer -->
+	    <div class="footer">
+	    	<div class="container">
+			
+		    	<div class="row">
+				
+		    		<div class="col-footer col-md-4 col-xs-6">
+		    			<h3>Contactanos</h3>
+		    			<p class="contact-us-details">
+	        				<b>Dirección:</b> Av. Argentina 864, Valparaíso<br/>
+	        				<b>Fono:</b> +56 32 939 9436 +56 32 939 9435<br/><br />
+	        				<b>Dirección:</b> Obispo Valdés 1421 local 6, Portal Mayor de Curauma<br/>
+                            <b>Fono:</b> +56 32 939 9517<br/>
+	        				<b>Email:</b> <a href="mailto:info@yourcompanydomain.com">info@yourcompanydomain.com</a>
+	        			</p>
+		    		</div>				
+		    		<div class="col-footer col-md-4 col-xs-6">
+		    			<h3>Siguenos</h3>
+						<p class="contact-us-details">Siguenos en nuestra redes sociales y entérate de todas las noticias y novedades que tenemos para ti.</p>
+		    			<div>
+		    				<a href="https://www.facebook.com/omil.valparaiso?fref=ts" target="_blank"><img src="../img/icons/facebook.png" width="32" alt="Facebook"/></a>
+		    				<img src="../img/icons/twitter.png" width="32" alt="Twitter"/>
+		    				
+						</div>
+		    		</div>
+		    		<div class="col-footer col-md-4 col-xs-6">
+		    			<h3>Omil Valparaíso</h3>
+		    				<p class="contact-us-details">La Oficina Municipal de Intermediación Laboral es un servicio gratuito que busca promover el encuentro entre oferta y demanda de empleo de nuestra comuna. Esta oficina depende de la Dirección de Desarrollo Económico y Cooperación Internacional de la Ilustre Municipalidad de Valparaíso.</p>
+		    		</div>
+
+		    	</div>
+		    	<div class="row">
+		    		<div class="col-md-12">
+		    			<div class="footer-copyright">Ilustre Municipalidad de Valparaíso © 2016 </div>
+		    		</div>
+		    	</div>
+		    </div>
+	    </div>
+    </form>
+</body>
+</html>
